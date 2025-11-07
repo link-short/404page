@@ -2,8 +2,15 @@
 <head><title>404 Not Found</title></head>
 <body bgcolor="white">
 <center><h1>404 Not Found</h1></center>
-<hr href="../server-data/"><center href="../server-data/"><button onClick="window.open("../server-data");">ServerData</button></center>
+<hr ><center><button id="homeButton">ServerData</button></center>
 </body>
+<script>
+   const homeButton = document.getElementById('homeButton');
+
+    homeButton.addEventListener('click', function() {
+      location.href= 'https://link-short.github.io/server-data/';
+    });
+</script>
 </html>
 <!-- a padding to disable MSIE and Chrome friendly error page -->
 <!-- a padding to disable MSIE and Chrome friendly error page -->
