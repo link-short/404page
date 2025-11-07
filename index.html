@@ -41,13 +41,20 @@ footer {
   <body>
     <header>
       <h1 id="site-title">ServerData</h1>
- 		  <a id="site-description"><meta name="description" content="Free service to make your database"></a>
+ 		  <h5 id="site-title-description">Free service to make your database></h5>
     </header>
     <main>
-      <p>!</p>
+      <p id="site-description">#site-description</p>
     </main>
     <footer>
       <p id="site-rights">© Winnigames2024 2025 Все права защищены</p>
     </footer>
   </body>
+  <script>
+    const SiteDescription = document.getElementById('site-description');
+    var descriptionText = "To make your own database click the button Create.";
+
+    site-description.textContent = descriptionText; // Changes the text inside the <p id="site-description"></p>
+    console.log('Site Description loaded sussesfull!!!');
+  </script>
 </html>
