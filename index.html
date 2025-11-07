@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <link rel="manifest" href="manifest.json">
   <base href="/404page/">
 
   
@@ -52,6 +53,14 @@ footer {
     </footer>
   </body>
   <script>
+
+   if('serviceWorker' in navigator){
+     navigator.serviceWorker.register('/404page/service-worker.js');
+   } else {
+     console.log("Service worker is not supported");
+   }
+
+
     const createButton = document.getElementById('createDatabaseButton');
 
     createButton.addEventListener('click', function() {
