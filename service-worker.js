@@ -3,7 +3,7 @@ const CACHE_NAME  = 'Simon-game';
 
 /* Add relative URL of all the static content you want to store in
  * cache storage (this will help us use our app offline)*/
-let resourcesToCache = ["./", "./img/game.png", "./game.js", "./styles.css"];
+let resourcesToCache = ["./server-data/", "./server-data/assets/favicon.ico", "./server-data/index.html"];
 
 self.addEventListener("install", e=>{
     e.waitUntil(
